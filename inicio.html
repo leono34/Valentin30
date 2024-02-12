@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="theme.js"></script>
+  <title>MI VALENTIN</title>
+</head>
+<body>
+  <div id="heart-rain"></div>
+  <div id="sidebar" class="sidebar">
+    <button onclick="changeTheme('amanecer')">Amanecer</button>
+    <button onclick="changeTheme('atardecer')">Atardecer</button>
+    <button onclick="changeTheme('noche')">Noche</button>
+  </div>
+  <div class="content">
+    <div class="poem-selector">
+      <label for="poemSelector">Seleccionar Poema:</label>
+      <select id="poemSelector" onchange="showPoem()">
+        <option value="poem0">ELIJE UNA OPCION</option>
+        <option value="poem1">Poema 1</option>
+        <option value="poem2">Poema 2</option>
+        <option value="poem3">Poema 3</option>
+        <option value="poem4">Poema 4</option>
+      </select>
+    </div>
+    <div class="cuerpo">
+      <div id="poemContainer" class="poem-container">
+        <div id="poemTextContainer" class="poem-text-container">
+              <p>ELIJE UNA DE LAS OPCIONES DE ARRIBA AMOR</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="cards-container">
+      <div class="card" onmouseover="showCardText(1)" onmouseout="hideCardText(1)">
+        <img src="images/foto1.jpg" alt="Imagen 1"style="width: 300px; height: 350px;">
+        <div id="cardText1" class="card-text">
+          <p>
+            Tus labios son lo que mas me llaman la atencion la perfecta forma de ellos
+            hacen que me den ganas de besarlos a cada instante.
+          </p>
+        </div>
+      </div>
+      <div class="card" onmouseover="showCardText(2)" onmouseout="hideCardText(2)">
+        <img src="images/foto2.jpg" alt="Imagen 2"style="width: 300px; height: 350px;">
+        <div id="cardText2" class="card-text">
+          <p>
+            Curioso pero muy exitante que tu manera de ser me vuelve loco
+            aveces loco por que me sacas de las casillas pero me gusta y
+            la otra es que me vuelve loco con solo tu forma de ser me
+            facina mi princesa
+          </p>
+        </div>
+      </div>
+      <div class="card" onmouseover="showCardText(3)" onmouseout="hideCardText(3)">
+        <img src="images/foto3.jpg" alt="Imagen 3"style="width: 300px; height: 350px;">
+        <div id="cardText3" class="card-text">
+          <p>
+            Lo mas lindo de ver tu rostro es que cuando sonries tus labios
+            junto a esa hermosa sonrisa me cautivan, quisiera
+            verla cada vez que nos veamos por que te hace ver mas bella
+          </p>
+        </div>
+      </div>
+      <div class="card" onmouseover="showCardText(4)" onmouseout="hideCardText(4)">
+        <img src="images/foto4.jpg" alt="Imagen 4"style="width: 300px; height: 350px;">
+        <div id="cardText4" class="card-text">
+          <p>
+            Quiero llevarte a una isla en colombia, te preguntaras para que
+            ...bueno la respuesta es que para que en la noche veas lo
+            hermosa y maravillosa mirada que tienes ,tienes unos
+            ojos muy hermosos ... me encantaria verlos brillar bajo la luz
+            de la luna
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    /***** Corazones cayendo en el blog *****/
+    if(typeof $pdj=='undefined'){document.write('<'+'script');document.write(' language="javascript"');document.write(' type="text/javascript"');document.write(' src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">');document.write('</'+'script'+'>')}</script><script>if(typeof $pdj=='undefined'){var $pdj=jQuery.noConflict()}if(!image_urls){var image_urls=Array()}if(!flash_urls){var flash_urls=Array()}image_urls['corazon']="http://lh6.googleusercontent.com/-7-WYEBOVd7c/TzMiej4AFcI/AAAAAAAACLc/w2Fn6N9jwIU/s32/heart.png";$pdj(document).ready(function(){var c=$pdj(window).width();var d=$pdj(window).height();var e=function(a,b){return Math.round(a+(Math.random()*(b-a)))};var f=function(a){setTimeout(function(){a.css({left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100)}).animate({top:(d-10)+'px'},e(8500,10000),function(){$pdj(this).fadeOut('slow',function(){f(a)})})},e(1,9000))};$pdj('<div></div>').attr('id','corazonDiv').css({position:'fixed',width:(c-20)+'px',height:'1px',left:'0px',top:'-5px',display:'block'}).appendTo('body');for(var i=1;i<=50;i++){var g=$pdj('<img/>').attr('src',image_urls['corazon']).css({position:'absolute',left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100),'margin-left':0}).addClass('corazonDrop').appendTo('#corazonDiv');f(g);g=null};var h=0;var j=0;$pdj(window).resize(function(){c=$pdj(window).width();d=$pdj(window).height()})});</script>
+  
+</body>
+</html>

@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+#heart-rain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 150px;
+  transition: background-color 0.3s ease;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+.sidebar button {
+  background-color: transparent;
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 100px;
+  padding: 10px;
+}
+/* ------------------------------------------------------------------------------------ */
+.amanecer {
+  background-color: #f6f65a;
+  color: #000000;
+}
+
+.atardecer {
+  background-color: #ff6600;
+  color:#2f0202;
+}
+
+.noche {
+  background-color: #1e1e75; 
+  color:white;
+}
+.amancer button {
+  color: #000; /* Color de texto en amanecer */
+}
+
+.atardecer button {
+  color: #2f0202; /* Color de texto en atardecer */
+}
+
+.noche button {
+  color: white; /* Color de texto en noche */
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+.content {
+  margin-left: 150px;
+  padding: 20px;
+}
+
+
+.cuerpo{
+  width: 70%;
+  margin: 5%;
+  border: 2px solid #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.01); /* Agregamos una sombra */
+  border-radius: 10px; /* Agregamos bordes redondeados */
+  padding: 10px 10px 0px 10px;
+}
+.poem-selector {
+  margin-bottom: 20px;
+}
+
+/* lugar donde van los poemas dentro de la selecion */
+.poem-container {
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.cards-container {
+  display: flex;
+}
+
+.card {
+  width: 260px;
+  margin-right: 20px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+}
+
+.card:hover .card-text {
+  transform: translateY(0);
+}
