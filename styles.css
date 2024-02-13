@@ -16,7 +16,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:palevioletred;
     position: relative;
 }
 .button {
@@ -35,3 +34,44 @@ body {
     color: white;
     cursor: pointer;
 }
+
+
+.corazon {
+    position: absolute;
+    animation-name: caidaCorazon;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes caidaCorazon {
+    to {
+        transform: translateY(100vh);
+    }
+  }
+  
+  .pequeno {
+    width: 20px;
+    height: 20px;
+    background: url('images/cora.gif') no-repeat center center/contain;
+  }
+  
+  .mediano {
+    width: 40px;
+    height: 40px;
+    background: url('images/cora.gif') no-repeat center center/contain;
+  }
+  
+  .grande {
+    width: 60px;
+    height: 60px;
+    background: url('images/cora.gif') no-repeat center center/contain;
+  }
+  
+  .corazones-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
