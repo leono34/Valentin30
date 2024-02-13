@@ -21,6 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function redirectToPage() {
-    // Cambia 'tu_otra_pagina.html' con la URL de la página a la que deseas redirigir
+    
     window.location.href = 'inicio.html';
 }
