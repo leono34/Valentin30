@@ -11,6 +11,10 @@
     sidebar.classList.add(theme);
   }
 
+  function redirectToPage() {
+    
+    window.location.href = 'netflix/netflix.html';
+}
 
   function showPoem() {
     const selector = document.getElementById("poemSelector");
